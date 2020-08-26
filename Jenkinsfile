@@ -21,20 +21,20 @@ pipeline {
                        echo "Hello"
                  }
                  }
-                 stage('Four') {
-                 parallel { 
-                            stage('Testing') {
+                 
+                 
+                            stage('Four') {
                            steps {
-                                echo "Testing the script"
+                                echo "Testing the scripts"
                            }
                            }
-                            stage('Deploying') {
+                            stage('Five') {
                               
                               steps {
                                 echo "Deploying the project"
                               }
                            }
-                           }
-                           }
+                           
+                           
               }
 }
